@@ -29,7 +29,8 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   env: {
-    CTF_ME_ID: config.CTF_ME_ID,
+    CTF_PERSON_ID: config.CTF_PERSON_ID,
+    CTF_BLOG_POST_TYPE_ID: config.CTF_BLOG_POST_TYPE_ID,
     CTF_SPACE_ID: config.CTF_SPACE_ID,
     CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN,
   },
@@ -58,7 +59,10 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/markdownit'],
+  markdownit: {
+    injected: true,
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

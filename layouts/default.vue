@@ -1,11 +1,10 @@
 <template>
-  <div>
-    <Header />
-    <Nuxt />
-  </div>
+  <Nuxt />
 </template>
 
 <style>
+@tailwind base;
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -24,3 +23,25 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+h1 {
+  @apply text-4xl;
+}
+h2 {
+  @apply text-3xl;
+}
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+h5 {
+  @apply text-lg;
+}
+
+@tailwind components;
+@tailwind utilities;
+</style>
