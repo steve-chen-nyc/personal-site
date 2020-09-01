@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li v-for="post in posts">
-        <nuxt-link :to="'/tech/' + post.fields.slug">
+        <nuxt-link :to="`/blog/${post.fields.slug}`">
           {{ post.fields.title }}
         </nuxt-link>
       </li>
