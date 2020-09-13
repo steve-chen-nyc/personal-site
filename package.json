@@ -18,6 +18,7 @@
   "devDependencies": {
     "@nuxt/types": "^2.14.0",
     "@nuxt/typescript-build": "^2.0.2",
+    "@nuxtjs/date-fns": "^1.4.0",
     "@nuxtjs/tailwindcss": "^2.1.0",
     "@vue/test-utils": "^1.0.3",
     "babel-core": "7.0.0-bridge.0",
