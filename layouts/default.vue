@@ -17,6 +17,11 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #000;
+  height: 100%;
+}
+
 *,
 *::before,
 *::after {

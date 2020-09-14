@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black w-screen h-screen w-full">
+  <div class="w-full">
     <div class="pt-20 pl-20">
       <nuxt-link to="/">
         <div class="flex justify-end mr-10">
@@ -24,16 +24,17 @@
         <li class="text-white uppercase" v-for="post in posts">
           <nuxt-link :to="`/blog/${post.fields.slug}`">
             {{ post.fields.title }}
+            <span class="pl-5">{{ post.fields.description }}</span>
+            <span class="pl-5 italic"
+              >Published:
+              {{
+                $dateFns.format(
+                  new Date(post.fields.publishDate),
+                  'MM-dd-yyyy hh:mm a'
+                )
+              }}
+            </span>
           </nuxt-link>
-          <span class="pl-5 italic"
-            >Published:
-            {{
-              $dateFns.format(
-                new Date(post.fields.publishDate),
-                'MM-dd-yyyy hh:mm a'
-              )
-            }}
-          </span>
         </li>
       </ul>
     </div>
