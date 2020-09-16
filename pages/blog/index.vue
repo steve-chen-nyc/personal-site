@@ -7,8 +7,7 @@
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="#fff"
-            class="h-8 w-8"
+            class="h-8 w-8 stroke-current text-white hover:text-blue-500"
           >
             <path
               stroke-linecap="round"
@@ -21,7 +20,10 @@
       </nuxt-link>
       <h1 class="text-white mb-5">KNOWLEDGE</h1>
       <ul>
-        <li class="text-white uppercase" v-for="post in posts">
+        <li
+          class="text-white uppercase hover:text-blue-500"
+          v-for="post in posts"
+        >
           <nuxt-link :to="`/blog/${post.fields.slug}`">
             {{ post.fields.title }}
             <span class="pl-5">{{ post.fields.description }}</span>

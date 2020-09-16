@@ -4,7 +4,7 @@
   >
     <div class="mt-4 text-center lg:text-left lg:m-0 lg:w-1/2">
       <h1 class="uppercase">Steve Chen</h1>
-      <h5>Software Engineer</h5>
+      <h5 class="roboto">Software Engineer</h5>
       <div class="flex justify-center lg:justify-start items-center mt-4">
         <a
           class="w-8 mr-4"

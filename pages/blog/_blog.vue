@@ -7,8 +7,7 @@
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="#fff"
-            class="h-8 w-8 mr-5"
+            class="h-8 w-8 mr-5 stroke-current text-white hover:text-blue-500"
           >
             <path
               stroke-linecap="round"
@@ -23,8 +22,7 @@
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="#fff"
-            class="h-8 w-8"
+            class="h-8 w-8 stroke-current text-white hover:text-blue-500"
           >
             <path
               stroke-linecap="round"

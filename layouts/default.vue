@@ -6,8 +6,8 @@
 @tailwind base;
 
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans Condensed', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -30,6 +30,7 @@ body {
 }
 
 h1 {
+  font-weight: 300;
   @apply text-4xl;
 }
 h2 {
@@ -45,6 +46,10 @@ h4 {
 
 h5 {
   @apply text-lg;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
 }
 
 @tailwind components;
