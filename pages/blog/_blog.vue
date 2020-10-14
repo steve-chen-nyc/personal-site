@@ -70,4 +70,6 @@ export default {
 article
   h1, h2, h3, p, ul
     margin-bottom: 2rem
+  hr
+    margin: 5rem 0
 </style>

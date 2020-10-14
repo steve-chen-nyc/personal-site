@@ -28,7 +28,7 @@
 export default {
   data() {
     return {
-      links: ['blog', 'timeline', 'skills'],
+      links: ['blog', 'resume'],
     }
   },
 }
