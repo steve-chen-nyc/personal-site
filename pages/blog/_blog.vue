@@ -49,11 +49,12 @@ const client = createClient()
 
 export default {
   asyncData({ env, params }) {
-    const { tech: slug } = params
+    const { blog } = params
+
     return Promise.all([
       client.getEntries({
         content_type: env.CTF_BLOG_POST_TYPE_ID,
-        'fields.slug': slug,
+        'fields.slug': blog,
       }),
     ])
       .then(([posts]) => {
@@ -72,4 +73,15 @@ article
     margin-bottom: 2rem
   hr
     margin: 5rem 0
+  pre
+    background-color: #fff
+    color: #000
+    padding: 2rem
+    margin-bottom: 2rem
+    white-space: pre-wrap
+    word-wrap: break-word
+  ol
+    list-style-type: decimal
+    li
+      margin-bottom: .5rem
 </style>
